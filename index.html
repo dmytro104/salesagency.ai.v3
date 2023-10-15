@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Agency AI</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+  <script type="module" crossorigin src="./assets/index-0f7dbc60.js"></script>
+  <link rel="stylesheet" href="./assets/index-c9b35dba.css">
+</head>
+<body>
+    <header>
+        <navbar>
+            <a><img src="./assets/Logo-ad9afda5.png" class="logo" alt=""></a>
+            <div class="right-side" id="navbar">
+                <a href="#services">Offering</a>
+                <a href="#mission">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </navbar>
+    </header>
+    
+    <section id="hero">
+        <div class="left-hero">
+            <h1>5x Your Booked Appointments With AI-Powered Sales Reps</h1>
+            <div class="service-button-section">
+                <a class="service-button" href="#services">Our offering</a>
+            </div>
+        </div>
+        <div class="right-hero">
+            <div id="model-container"></div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 id="title">What We Offer</h2>
+        <div id="box-section">
+            <div id="service-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEElEQVR4nO3ZzYtNYRzA8Z/XUWJDGKJk5WUpWUrsyEYUNanBn6D8BbLDCv+BxcR4jSxQkxoLRnmLImXl5UZIqI9OcxY3Zu7c59zuuc9kPn/B/fac+5zn+Z2IGTN6B3swii94gK0xnWAezvpXA6tiOsAiXDe5a5E7rMQTUxuIXGE5XmjPJ/RHbjAfI9IMR25wXDUHIyd4UzHkA1ZELvBVdUORC7zUmf2RAwx1GPI8coCjHYZ8jxxgGX53EHI/coHbHYQM5HbSreIRZkcuMAtjFUJ2Rm6wLzHicuTI+KrcSwgZjFxhI34mnILXRa5wMmFVHmJh5Ah95Q9sV7F190WOsAHfEmIuYm7kCEekOV9sGJEjE09TWjkVGY+G7iTGnM5yZYwPJl5VeMzmRG6wBm8TYy5hQeQGm/AxMebmRO+ZYrVwqBzF/sKz4ohUZ8yWchacYqz5BIDtLd5TV4pBYV0xO/AjMaY4zgziapvTmQN13l9SY1T4j/XXEbOtwmOWqlHMFOqI2Yz3uu8GVtdx9H9XQ0yj2Gy6HbO2wkuzitGuhjSNlVJumFV87npI0yeKc10MGaklpCnocOJ9pl27ag0pY9Yn3jSncqb2iL+uzScSBhqttt/e30DLLfquah5jcWQ2N9ub+Lg9Le5DkaMyaDdulUf4yRRb+dKYDrCkPBVfKD4YlZ8BX+NYcc3u9e+b8d/6A8BzVur0abPMAAAAAElFTkSuQmCC" alt="">
+                <h2>Sales Expertise</h2>
+                <p>Our sales acumen allows us to script out the AI agent and teach it how to handle 
+                    any objections or questions. From there we'll revise and iterate to make it as 
+                    complete as possible.
+                </p>
+            </div>
+            <div id="service-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADT0lEQVR4nO2aS0tVURTHLygJZulEGmhOilSa9PARNs5BKWrQY2jQBzC6w2xQiUVFn0CNoiD7BBpWkxz1GjpoUlbQIKOyzER/sXIJJzr7cR73em75gwMX7t5r7f+9Z6+z9lonl9vgPwC4AizzN0tAPlcqALOYeZ4rBYCtwIpFyA+gPJd1gHbcNK3nAhuAM0CtY1y/h5BjDhu1wACwPW0ROwP3/Xug0zCuCrjtIWQE2GywcUh9CG+AHYUQsYbsgetAhY7pAO4D3/HnGzAuc9XGJuBqyP5KLsYgIsgLYJLkTABPLd/HFwPUO0QUm1mgLo6QU2SP/jhCKoEZssMrCSaRhaiY/cDP9VbAamrTHktEQMz5iE4/anjtARolzOoln3uBUWAuos3BRCJUSDkw7eFMQu8lSVE8bFYDQ57hehooSyxEHbtC7DugNYbdPcBrh+2JtEQcLEhY/DPMv3X46EhDiDyxTcitsS8FHy3AgsXPeFIHsknnLQ4uJBUR8DXsSGeihV7diAeA08AdR3QybmyNWo/1h5DrEdDt8Dtn8XdLM+tWYItNwGXNaXwZcdgyMWSZNxbBvwSJ4TAjYWdsGz2Wf8JFl2FuX8Q1LIcZicouw2LkdnLx0DC3Meoi0hASuvmArx5zv1gOZiUl5LOlcFF0IaZbS6KTi6lC3lpLEW30GhbT7TH3iGHu0YhrWAozkpfiGbDoaWQ0bDFqSxJCExct8256+l7UY3bele3uBk44DMsDsdpip0uik+4ZuaZM/4SOrwE+2X444DjQHLnAp6fE+TgPt5j14vRSlIhJoyR6LSmIaCto0hioWdmQFLw+FxOpJup5xkbyNF6dPXA4koW0xbC71+NgNZmWiArgJW4WNBWv9rBZo3tCKvMunkkVMg0hN4jGnGaxUmho0rSjSj/3aSS0RacwriUV0enodRSLFeBwXBG1gap4FvgAbIsjRHohWWMgbmMna0XshshCPNsK0ym1FcTGE4eIgvRIJFMeXMt5tPY1HqPRcy/Q6CkDzoXUmpOLMIiZMVUVNcze9RAxZmm9tQa6AOmJCDio03JMpWOclJFcnPRIVvuTVDCLkZsJzbmsw2qhrfRfGBAcRenSeIVD0OTR9FLN2d+DNvjH+QW02xSbpw6zpgAAAABJRU5ErkJggg==" alt="">
+                <h2>AI and Technical Skills</h2>
+                <p>We are pioneers in the emerging AI industry, and are experts in prompt engineering. This
+                    allows us to make the AI agent sound completely human and to ensure that it does its job
+                    over the phone.
+                </p>
+            </div>
+            <div id="service-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADk0lEQVR4nM2aS0gVURjHp4c9yFIQhXARtLAIilpoBlnkxvZh2cZ2rYNKokW06KVi0MMWihSEvaSFCRUERWhmSFCtwkcvMzIiUeyl6S8Onpun8czMmeHOcX4gXp3znfn+Z8493+Nex5lDgFXAGaAfOKq5Xg98Bc4B65ykAcwDLgN/mEG8LlTGlDKbm06SADKBKY2jL4CFwGLgteb6b2C+kySAHvSMyB8d3U7SkFsrLPVJcHyZ5o0clibFPgNYDyy1KeKidKRHPokoIlK0AA+AMfn3bVsicoCfxMcUsNaGkEMhHRsFhkLaXLAhpNvQmSdAsWJXALQa2r6xIeQgMBHgyDNgicZ2PnAnwHYY2BW7EOnQJumsF9t9bAt87NqAfCsiXKv7QePMeFC0Bj5p7IbseT87vxLJoRuRY2UE2H7R2H0DVthTMO3IGuChzxYp87Hd6GM3CFTYErEf+IU/L0Ui6cy2XQQ8JpjrNoR0YsYrYKfMfheIAwB4amg7GNW5Uhm43MdgoWbsAcIxaXBcu6mNKuS8x4QnNGOXa0SnO0UpiCpEJG06Wj3Gi3JW8F7sZ+CSR2FlwmngOHBfpjINfo5mySyzAcjWXB/wuEm/Zmy2nOeemFf5/ynCczXMagsRXYqxWMVtyvV8n9UU+ztPGVsCvFOud6XEAHURhDyKKkINWmeBZoOjVNQJjUCNq7nwnxiZJOoYAJ57LNYPUc+bCLmGHZqVwkilN1Xx+ZTCG0yEiFW3gbhPrevpiidQ6irIhlw52RXTJyLaNH0xi+hNRXEgF6iSwfCkxp8yuRWPASsDBbiMt3js7XQwoRZPsUO0E8WEamsiBMANA6fagcNApdweHQY2jY7lxvK4jzNjXqUlUA58D7DNi8vxHaILIdOOjwar6lsfA7sD7MXp9Ba4K0+uknQJGcWcdsM5vYKdjpF0CQlDleGcR8JMOhdCKg3nrEy6kKokP5HhEPfsSHN5KxhOl5AiWay0ydMkiPKA+fYanFr9sh0qapKitAiJEEdEnNjjYVthEEdynYRF9k75Xtgnf3cmKrLHnM7XOLYAtsaY/U6qNUecIrJcNXYciFI2J24hDdihKW4hLZaE3IpbSJZPF6VONtfEtw9MuijVHq3Pfy0h22L6RPmrXF8dEOzUvlaxrNHtinCJaZbHsK7d/zlEpzFT6YnZE2GCz4c22t5vYmHmmwxuZrV0Eg3T5bHu85HNc+XUX8Qfb8q38E3CAAAAAElFTkSuQmCC" alt="">
+                <h2>End-to-End Automation</h2>
+                <p>Our tech stack allows us to completely automate your entire sales process. From booking
+                    calendar appointments, to sending out emails or text messages, we create the backend 
+                    framework so that you don't have to worry about it.
+                </p>
+            </div>
+            <div id="service-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEYklEQVR4nO2aXYhWRRjHjx+pBWabmloE1mXeCAYphilEJKUFuYKWGISJXSxLGmwXwt54s0qRsFJ0URdB4E2xoqJB24V9mAqK6dpqGFhCq2UEmuLWL578j46HOe97Pubsa+EfXjzO939mnpn/88wmyW38TwHcCzwPbAZ2AieA34Ar+tn3gPKszHNAW3IrAJgArAL2An9RHMPAHuAlYHwrCNwJrAfOEg8/A6/b5IwUiWeAH6gPp4DFdW+jd70OfzFSyqsDvdFXB5gOHEp19JaX/wXwBNAfgcBh4LK+DwDTYpF4SMttOANc1fe8QNmFEYg8Cszx+jxpY6hKYirwvRo8Dqz0CI0KlF8egchCtdUGfKM0s8npVWzCbadvdU+8o/+/nUF6KAKRfq/Ne4CvvW1W3GY8w7ZjcQYwWt+G+YHy2yOQ2AE8HpigH5XfW+aIRTfyPOARYIvSfhKpssb9N9CR6m+3/ZLs8cwGLqn+00UuO3dPvKEt5WNfhdPJSKwL9DnXfknjcXV5xt98iwEbVMFOjXHAY8SBSZg16mOUJmlGrtlN/q1zB3BEbXXmMXAnO15Q2ouRiHzi9WMk0MByC0dgibe9s7WZxJvhsJfWXXLg0yQKfXSpzcnAOaVl2kYaWsmjqreyUUFTsYb1XtpHZVio7meBrE5go74vAgsyBxQAsLbhBMioh/W730t3l1IRdKvuKxkG707EwuKQa8fxsBTGpFABc4rQkh/w9NOvRVl4bS7KKGIDaS9KwsE7NZeGMt09URc+lTJ4E3gyqQBgk9rsCWWaC1oXunIMzgTn2pxElqndvlDmYKtIeNvlSlqiZJSdpbZPhDLP10BiY44B2fF+zKvzFTC2ST3TfoZzoUybjShoMuD21Kw647ejuh0Yk2NF7OI2XB4xIoELdUhHqEvfXNTX4JoezCQSbWs1IOGw3dtOG1LjeAC4qwkRK5O5teoy9mY4Dbwv27jgX6je2GYCq4EPVd7+zTT22MfvH8B78r/n6NvS8uB3X0w2KNdX54V4EHgVmBjoY6LyDkpBfA5sMx9FKmCKd2tfXxUpDFMaafQ0kihR/O2y4EYkJr0qLvDh49lQA20B2V0qAhKBTH9KfD7o2Y+Dica7sxqwgHLLViOwKhcU5/oy0N+uJAsVvcEoq+GQIy6wIsmCuY9yI8tgZhIRNI5anmn6DKHQfhm8HJNIIKLj46ZwUqNVcWHSIvggiQzCyiBfOEgNLC5B5HRkEg8Dfwb6eapoQ/Y+URTHNIuzUorXtNXUgv3vCLS/teiEOKlsvnssDOX10wnviP2l3xklt+11Nhpy9DkW+C5V7VTlBx899JwcQSIdqSqD0Y52RQ2jbLMm/UxOhZ9sO90XhUTKZnrrIGLurUThca/o1lrf3u19ouJW6055eq+l7q3BwkdsxdXprCBnPtZzngufOtnR0aq/gBivLbG7pAtwVZ7pipYQCMECynq/6NFlNqCAhvujmvOygT6VWZLpT9xG8t/HP+sVbGIFa8saAAAAAElFTkSuQmCC" alt="">
+                <h2>Project Management</h2>
+                <p>Once we release the AI agents out into the field, we will closely monitor them to
+                    ensure they're working properly. If issues come up, we will be the first to know and
+                    will promptly take action to fix it as quickly as possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        
+    <section id="mission">
+        <h2>About Us</h2>
+        <p>
+            We distinguish ourselves in the space by merging the realms of technology and sales expertise, 
+            a unique combination not commonly found. Our CEO & Founder boasts a background that
+            encompasses leading a software development agency at the forefront of AI and machine learning 
+            implementation, as well as achieving top-tier sales performance, coaching over 100 sales professionals
+            to similar success. Meanwhile, our CTO's experience predates the buzz surrounding prompt engineering, 
+            with a robust history at J.P. Morgan and in health tech, precisely where software development, integration,
+            and business converge. We offer a comprehensive team capable of not only mastering the technical 
+            aspects but also optimizing our AI agents to handle sales calls with exceptional finesse. If you seek a team that
+            can deliver both technical excellence and sales proficiency in AI phone setter development, your search ends here.
+        </p>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="./assets/sap-headshot-1dc337aa.png" alt="">
+            <h3>Mitch Sapoff</h3>
+            <p>CEO & Co-Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/DK-headshot-v3-09723c2c.png" alt="">
+            <h3>Dmytro Kostynyuk</h3>
+            <p>CTO & Co-Founder</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="question-box">
+			<div class="question-section">
+				<p>1. What AI tools or software do we use to fulfill our services?</p>
+				<div id="unopened">
+					<a href="#" id="open-question1"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+				</div>
+				<div id="opened" class="close-question1">
+					<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div id="answer-section" class="answer1">
+				<p>We use a variety of different tools, such as Air AI and Zapier. However, the 
+                    field is constantly evolving, with new tools coming out regularly. As such, our 
+                    tool stack is subject to change and will constantly be assessed based on what we 
+                    think the most optimal and affordable combination(s) are.</p>
+			</div>
+		</div>
+        <div class="question-box">
+			<div class="question-section">
+				<p>2. How much do you charge for your services?</p>
+				<div id="unopened">
+					<a href="#" id="open-question2"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+				</div>
+				<div id="opened" class="close-question2">
+					<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div id="answer-section" class="answer2">
+				<p>We do not disclose our pricing publicly. If you are interested in working with us, 
+                    please reach out to <a href="mailto:mitch@salesagency.ai">mitch@salesagency.ai</a>.
+                    If it's a good fit, we will discuss all of the details of our partnership, including our
+                    pricing options.
+                </p>
+			</div>
+		</div>
+        <div class="question-box">
+			<div class="question-section">
+				<p>3. What does your implementation process look like?</p>
+				<div id="unopened">
+					<a href="#" id="open-question3"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+				</div>
+				<div id="opened" class="close-question3">
+					<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div id="answer-section" class="answer3">
+				<p>Our implementation process is designed to be transparent, efficient, and comprehensive. Here's how we work:</p>
+                <ol>
+                    <li>
+                        <strong>Kick Off Call:</strong>
+                        We start with a Kick Off Call to map out your plan and objectives. This initial discussion helps us understand your needs and goals.
+                    </li><br>
+                    <li>
+                        <strong>Direct Communications:</strong>
+                        We maintain direct communications on Slack, providing you with real-time status updates, Q&A sessions, live demonstrations, and detailed reports. We want to ensure you're informed every step of the way.
+                    </li><br>
+                    <li>
+                        <strong>Integration of Current Systems:</strong>
+                        Our team takes care of integrating your current systems seamlessly into our workflow, ensuring a smooth transition.
+                    </li><br>
+                    <li>
+                        <strong>Scripting:</strong>
+                        We handle the scripting, ensuring that your campaigns are tailored to your specific requirements and objectives.
+                    </li><br>
+                    <li>
+                        <strong>Testing:</strong>
+                        Rigorous testing is an integral part of our process. We thoroughly test all components to ensure they perform optimally.
+                    </li><br>
+                    <li>
+                        <strong>Campaign Rollout:</strong>
+                        Once everything is in place, we roll out your campaigns, ensuring that they launch successfully.
+                    </li><br>
+                    <li>
+                        <strong>Optimization:</strong>
+                        We continually optimize your campaigns to enhance performance and achieve the best results.
+                    </li><br>
+                    <li>
+                        <strong>Scaling the Agents:</strong>
+                        When the time is right, we scale up the number of agents to meet your growing needs and demand.
+                    </li><br>
+                    <li>
+                        <strong>Script for Transition:</strong>
+                        As a bonus, we provide you with a script that you can use to gracefully transition away from human setters when the time is right, complete with a touch of humor.
+                    </li><br>
+                </ol>
+                <p>Our implementation process is designed to be a collaborative and smooth experience, and we are here to support you every step of the way.</p>
+			</div>
+		</div>
+    </section>
+
+    <section id="contact">
+        <h2>Additional Information</h2>
+        <div class="contact-section">
+            <div class="footer">
+                <p>&copy; Sales Agency AI. All rights reserved.</p>
+            </div>
+            <div class="contact-right-side">
+                <div class="contact-info">
+                    <p id="contact-header">
+                        Contact Details
+                    </p>
+                    <p><a href="mailto:mitch@salesagency.ai">mitch@salesagency.ai</a></p>
+                    <p><a href="tel:+3474042926">+1 (347)-404-2926</a></p>
+                </div>
+                <div class="location">
+                    <p id="contact-header">
+                        Location
+                    </p>
+                    <p>New York, USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
